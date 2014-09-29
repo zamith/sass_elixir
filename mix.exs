@@ -5,6 +5,9 @@ defmodule SassElixir.Mixfile do
     [app: :sass_elixir,
      version: "0.0.1",
      elixir: "~> 1.0.0",
+     description: "A SASS plugin for elixir projects",
+     package: package,
+     source_url: "https://github.com/zamith/sass_elixir",
      deps: deps]
   end
 
@@ -26,5 +29,13 @@ defmodule SassElixir.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     []
+  end
+
+  defp package do
+    [
+      contributors: ["Zamith"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/zamith/sass_elixir"}
+    ]
   end
 end
